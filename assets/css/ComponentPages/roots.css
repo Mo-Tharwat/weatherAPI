@@ -1,0 +1,52 @@
+/* import Electrolux Fonts */
+/* @import url('./../Electrolux_Font/electroluxFonts.css'); */
+
+/* Variables */
+:root{
+    /* Font Family */
+    /* --regular:ElectroluxRegular;
+    --italic-regular:ElectroluxItalicRegular;
+    --bold:ElectroluxBold;
+    --italic-bold:ElectroluxItalicBold; */
+
+    /* Colors */
+    /* --hover-color-muted: #3F72AF;
+    --hover-color-warm: #FC3C3C;
+    --main-color: #112D4E;
+    --container-color: #F9F7F7;
+    --main-text-color:#0a1c30;
+    --layer-color:rgba(0,0,0,0.6);
+    --layer-color-min-section1: rgba(63, 114, 175,0.6);
+    --layer-color-min-section2: rgba(249, 247, 247, 0.7); */
+
+    /* Background images full section*/
+    /* --section-image1:url("./../image/Section/Picture1.jpg");
+    --section-image2:url('./../image/Section/Picture2.jpg');
+    --section-image3:url('./../image/Section/Picture3.png');
+    --section-image4:url('./../image/Section/Picture4.jpg');
+    --section-image5:url('./../image/Section/Picture5.jpg'); */
+
+    /* Minimum Section */
+    /* --section-minimage1:url('./../image/Section/MinPicture1.png');
+    --section-minimage2:url('./../image/Section/MinPicture2.png');
+    --section-minimage3:url('./../image/Section/MinPicture3.jpg'); */
+
+    /* Background Cards */
+    /* --background-card-elux:url('./../image/ProfileCard/EluxBackground.jpg'); */
+}
+/* Basic Tags */
+/* body{
+    font-family: var(--regular) !important;
+    background-color: var(--container-color);
+    color: var(--main-text-color);
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: var(--Bold) !important;
+}
+a{
+    color: var(--main-text-color);
+}
+a:hover{
+    color: var(--hover-color-muted);
+} */
+/* End Basic Tags ---------------------------------------- */

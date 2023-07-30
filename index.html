@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- libraries -->
+        <link rel="stylesheet" href="./assets/css/libraries.css">
+        <!-- Index Style Sheet -->
+        <link rel="stylesheet" href="./assets/css/index_style.css">
+        <title>Weather API</title>
+    </head>
+    <body>
+<!-- Navbar -->
+    <header class="position-fixed top-0 start-0 end-0">
+        <nav>
+            <div class="container-fluid bg-dark py-4">
+                <div class="row py-2">
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="w-50 d-flex align-items-center justify-content-center">
+                            <div class="img-fluid">
+                                <img src="./assets/img/log/logo@2x.png" alt="" class="logo" width="64" height="38">
+                            </div>
+                            <a href="./index.html" class="text-decoration-none text-center text-light">
+                                <div class="px-2">
+                                    <h1 class="h4 mb-0">Weather</h1>
+                                    <small class="fst-normal">tagline goes here</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 d-flex align-items-center justify-content-center">
+                        <a href="./index.html" class="navItem mx-4">Home</a>
+                        <a href="#" class="navItem mx-4">News</a>
+                        <a href="#" class="navItem mx-4">Live Cameras</a>
+                        <a href="#" class="navItem mx-4">Photos</a>
+                        <a href="#" class="navItem mx-4">Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- End Navbar -->
+<!-- Main Content -->
+    <main class="mainBody ">
+        <!-- Search from -->
+        <section class="pt-3">
+            <div class="container search form-control rounded-pill d-flex justify-content-between">
+                <input type="text" class="rounded-pill textFind form-control border-0 shadow-none" placeholder="Find Your Location ...">
+                <button class="btn btnFind btn-info rounded-pill px-5">Find</button>
+            </div>
+        </section>
+
+        <!-- Cards of Weather -->
+        <section>
+            <div class="container mt-5">
+                <div class="row forecastContainer">
+
+                        <!-- <div class="forecastToday  col-md-4 ">
+                            <div class="card my-3">
+                                <div class="card-header d-flex justify-content-between align-items-center text-muted bg-dark w-100">
+                                    <div class="today">Monday</div>
+                                    <div class="date">6June</div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="location fw-bolder mt-3 text-muted">
+                                        <span>Country: Egypt, Cite: Cairo</span>
+                                    </div>
+                                    <div class="currentDegree d-flex justify-content-between align-items-center">
+                                        <div class="h2">
+                                            <span>32<sup>o</sup>C</span>
+                                        </div>
+                                        <div class="tempRange mt-3 fw-bold d-flex justify-content-between flex-column">
+                                            <div class="maxTemp">
+                                                <i class="fa-solid fa-temperature-arrow-up"></i>
+                                                <span class="text-muted"> 42<sup>o</sup>C</span>
+                                            </div>
+                                            <div class="minTemp">
+                                                <i class="fa-solid fa-temperature-arrow-down"></i>
+                                                <span class="text-muted"> 24<sup>o</sup>C</span>
+                                            </div>
+                                        </div>
+                                        <div class="foecastIcon">
+                                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Icon" width="90">
+                                        </div>
+                                    </div>
+                                    <div class="fw-bold text-primary">Partly cloudy</div>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./assets/img/icons/icon-umberella.png" alt="">
+                                                20%
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./assets/img/icons/icon-wind.png" alt="">
+                                                18km/h
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="./assets/img/icons/icon-compass.png" alt="">
+                                                East
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forecastTomorrow  col-md-4 ">
+                            <div class="card my-3">
+                                <div class="card-header d-flex justify-content-between align-items-center text-muted bg-dark w-100">
+                                    <div class="today">Monday</div>
+                                    <div class="date">6June</div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="location fw-bolder mt-3 text-muted">Cairo</div>
+                                    <div class="degree d-flex justify-content-between align-items-center">
+                                        <div class="h2">
+                                            32<sup>o</sup>C
+                                        </div>
+                                        <div class="foecastIcon">
+                                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Icon" width="90">
+                                        </div>
+                                    </div>
+                                    <div class="fw-bold text-primary">Partly cloudy</div>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="https://routeweather.netlify.app/images/icon-umberella.png" alt="">
+                                                20%
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="https://routeweather.netlify.app/images/icon-wind.png" alt="">
+                                                18km/h
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="https://routeweather.netlify.app/images/icon-compass.png" alt="">
+                                                East
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forecastAfterTomorrow col-md-4 ">
+                            <div class="card my-3">
+                                <div class="card-header d-flex justify-content-between align-items-center text-muted bg-dark w-100">
+                                    <div class="today">Monday</div>
+                                    <div class="date">6June</div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="location fw-bolder mt-3 text-muted">Cairo</div>
+                                    <div class="degree d-flex justify-content-between align-items-center">
+                                        <div class="h2">
+                                            32<sup>o</sup>C
+                                        </div>
+                                        <div class="foecastIcon">
+                                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Icon" width="90">
+                                        </div>
+                                    </div>
+                                    <div class="fw-bold text-primary">Partly cloudy</div>
+                                </div>
+
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="https://routeweather.netlify.app/images/icon-umberella.png" alt="">
+                                                20%
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="https://routeweather.netlify.app/images/icon-wind.png" alt="">
+                                                18km/h
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div>
+                                                <img src="https://routeweather.netlify.app/images/icon-compass.png" alt="">
+                                                East
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form form-control d-flex justify-content-between rounded-pill">
+                        <input type="text" placeholder="Enter your email to subscribe..." class="form-control shadow-none rounded-pill">
+                        <button class="btn btn-primary ms-2 rounded-pill">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1 d-flex align-items-center">
+                    <div class="ms-5">
+                        <a href="#" class="m-2"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+                        <a href="#" class="m-2"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+                        <a href="#" class="m-2"><i class="fa-brands fa-2xl fa-google-plus"></i></a>
+                        <a href="#" class="m-2"><i class="fa-brands fa-2xl fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-muted mt-2 ms-2">&#169; Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+        <!-- bootstrap (Javascript & Popper) -->
+        <script src="./assets/framworks/Bootstrap/bootstrap_v5/js/bootstrap.bundle.min.js"></script>
+        <!-- main javascript -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
